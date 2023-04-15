@@ -22,8 +22,7 @@ func toFloat(rawFloat string) float64 {
 }
 
 // doReq HTTP client
-func doReq(req *http.Request) ([]byte, error) {
-	requestTimeout := time.Duration(5 * time.Second)
+func doReq(req *http.Request, requestTimeout time.Duration) ([]byte, error) {
 	client := &http.Client{
 		Timeout: requestTimeout,
 	}
@@ -50,7 +49,7 @@ func (s *Client) makeReq(url string) ([]byte, error) {
 		return nil, err
 	}
 	req.Header.Add("X-CMC_PRO_API_KEY", s.proAPIKey)
-	resp, err := doReq(req)
+	resp, err := doReq(req, s.requestTimeout)
 	if err != nil {
 		return nil, err
 	}

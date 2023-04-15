@@ -7,11 +7,13 @@ import (
 	"fmt"
 	"os"
 	"strings"
+	"time"
 )
 
 // Client the CoinMarketCap client
 type Client struct {
 	proAPIKey      string
+	requestTimeout time.Duration
 	Cryptocurrency *CryptocurrencyService
 	Fiat           *FiatService
 	Exchange       *ExchangeService
@@ -22,7 +24,8 @@ type Client struct {
 
 // Config the client config structure
 type Config struct {
-	ProAPIKey string
+	ProAPIKey      string
+	RequestTimeout time.Duration
 }
 
 // CryptocurrencyService ...
@@ -275,8 +278,13 @@ func NewClient(cfg *Config) *Client {
 		cfg.ProAPIKey = os.Getenv("CMC_PRO_API_KEY")
 	}
 
+	if cfg.RequestTimeout == 0 {
+		cfg.RequestTimeout = 10 * time.Second
+	}
+
 	c := &Client{
-		proAPIKey: cfg.ProAPIKey,
+		proAPIKey:      cfg.ProAPIKey,
+		requestTimeout: cfg.RequestTimeout,
 	}
 
 	c.common.client = c
