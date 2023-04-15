@@ -10,8 +10,8 @@
 
 [![License](http://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/miguelmota/go-coinmarketcap/master/LICENSE.md)
 [![Build Status](https://travis-ci.org/miguelmota/go-coinmarketcap.svg?branch=master)](https://travis-ci.org/miguelmota/go-coinmarketcap)
-[![Go Report Card](https://goreportcard.com/badge/github.com/miguelmota/go-coinmarketcap?)](https://goreportcard.com/report/github.com/miguelmota/go-coinmarketcap)
-[![GoDoc](https://godoc.org/github.com/miguelmota/go-coinmarketcap?status.svg)](https://godoc.org/github.com/miguelmota/go-coinmarketcap)
+[![Go Report Card](https://goreportcard.com/badge/github.com/kgrieco/go-coinmarketcap?)](https://goreportcard.com/report/github.com/kgrieco/go-coinmarketcap)
+[![GoDoc](https://godoc.org/github.com/kgrieco/go-coinmarketcap?status.svg)](https://godoc.org/github.com/kgrieco/go-coinmarketcap)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 
 Supports the CoinMarketCap API [Pro Version](https://pro.coinmarketcap.com/api/v1), [V2](https://coinmarketcap.com/api) and V1 Public API
@@ -28,12 +28,12 @@ Supports the CoinMarketCap API [Pro Version](https://pro.coinmarketcap.com/api/v
 
 ## Documentation
 
-[https://godoc.org/github.com/miguelmota/go-coinmarketcap](https://godoc.org/github.com/miguelmota/go-coinmarketcap)
+[https://godoc.org/github.com/kgrieco/go-coinmarketcap](https://godoc.org/github.com/kgrieco/go-coinmarketcap)
 
 ## Install
 
 ```bash
-go get -u github.com/miguelmota/go-coinmarketcap
+go get -u github.com/kgrieco/go-coinmarketcap
 ```
 
 ## Pro V1 (latest)
@@ -68,7 +68,7 @@ import (
 	"fmt"
 	"os"
 
-	cmc "github.com/miguelmota/go-coinmarketcap/pro/v1"
+	cmc "github.com/kgrieco/go-coinmarketcap/pro/v1"
 )
 
 func main() {
@@ -92,7 +92,7 @@ func main() {
 
 ### Examples
 
-For more examples, check out the [`./pro/v1/example`](./pro/v1/example) directory and [documentation](https://godoc.org/github.com/miguelmota/go-coinmarketcap/pro/v1)
+For more examples, check out the [`./pro/v1/example`](./pro/v1/example) directory and [documentation](https://godoc.org/github.com/kgrieco/go-coinmarketcap/pro/v1)
 
 ---
 
@@ -109,7 +109,7 @@ import (
 	"fmt"
 	"log"
 
-	cmc "github.com/miguelmota/go-coinmarketcap/v2"
+	cmc "github.com/kgrieco/go-coinmarketcap/v2"
 )
 
 func main() {
@@ -130,7 +130,7 @@ func main() {
 
 ### Examples
 
-For more examples, check out the [`./v2/example`](./v2/example) directory and [documentation](https://godoc.org/github.com/miguelmota/go-coinmarketcap/v2)
+For more examples, check out the [`./v2/example`](./v2/example) directory and [documentation](https://godoc.org/github.com/kgrieco/go-coinmarketcap/v2)
 
 ---
 
@@ -147,7 +147,7 @@ import (
 	"fmt"
 	"log"
 
-	cmc "github.com/miguelmota/go-coinmarketcap/v1"
+	cmc "github.com/kgrieco/go-coinmarketcap/v1"
 )
 
 func main() {
@@ -168,7 +168,7 @@ func main() {
 
 ### Examples
 
-For more examples, check out the [`./v1/example`](./v1/example) directory and [documentation](https://godoc.org/github.com/miguelmota/go-coinmarketcap/v1)
+For more examples, check out the [`./v1/example`](./v1/example) directory and [documentation](https://godoc.org/github.com/kgrieco/go-coinmarketcap/v1)
 
 ### Contributing
 
